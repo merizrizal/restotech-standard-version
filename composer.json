@@ -49,6 +49,14 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+	{
+            "type": "vcs",
+            "url": "https://bitbucket.org/synctechid/synctbase.git"
+        },
+	{
+            "type": "vcs",
+            "url": "https://bitbucket.org/synctechid/restotech-standard.git"
         }
     ]
 }
