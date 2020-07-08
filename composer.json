@@ -40,10 +40,7 @@
         "codeception/verify": "~0.3.1"
     },
     "config": {
-        "process-timeout": 3600,
-        "fxp-asset": {
-            "enabled": false
-        }
+        "process-timeout": 3600
     },
     "repositories": [
         {
@@ -51,12 +48,12 @@
             "url": "https://asset-packagist.org"
         },
 	{
-            "type": "vcs",
-            "url": "https://bitbucket.org/synctechid/synctbase.git"
+            "type": "git",
+            "url": "https://username@bitbucket.org/synctechid/synctbase.git"
         },
 	{
-            "type": "vcs",
-            "url": "https://bitbucket.org/synctechid/restotech-standard.git"
+            "type": "git",
+            "url": "https://username@bitbucket.org/synctechid/restotech-standard.git"
         }
     ]
 }
