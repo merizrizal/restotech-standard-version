@@ -9,7 +9,15 @@
 
 Run composer update first
 
-Don't forget to create file config main-local.php and params-local.php. If you don't know about it, you should read docs about Yii2
+Create file /generate/backend/config/params-local.php
+```php
+return [
+    'database' => [
+        'user' => 'this-is-username-of-your-database',
+        'password' => 'this-is-password-of-your-database'
+    ]
+];
+```
 
 Then locate /template/engine/common/config/bootstrap.php and change the root URL config
 
