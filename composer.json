@@ -49,11 +49,11 @@
         },
 	{
             "type": "git",
-            "url": "https://username@bitbucket.org/synctechid/synctbase.git"
+            "url": "https://github.com/merizrizal/synctbase.git"
         },
 	{
             "type": "git",
-            "url": "https://username@bitbucket.org/synctechid/restotech-standard.git"
+            "url": "https://github.com/merizrizal/restotech-standard.git"
         }
     ]
 }
