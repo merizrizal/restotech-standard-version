@@ -30,3 +30,6 @@ Connect to address `http://your-site/generate/backend/web` for generating new re
 
 username: T001
 password: 123456
+
+## Contact
+Any question/support please contact me meriz.rizal@gmail.com
