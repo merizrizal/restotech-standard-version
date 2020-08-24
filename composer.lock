@@ -2046,7 +2046,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/merizrizal/restotech-standard.git",
-                "reference": "4dd36204870398f72d0d15d64035cf315ada9993"
+                "reference": "95d933bd7b23920cf18bfeb820ad75cd347e8858"
             },
             "require": {
                 "kartik-v/yii2-field-range": "*",
@@ -2066,7 +2066,7 @@
                 }
             },
             "description": "Restotech, Property of synctech.id",
-            "time": "2020-08-24T11:02:52+00:00"
+            "time": "2020-08-24T14:52:03+00:00"
         },
         {
             "name": "synctech/yii2-synctbase",

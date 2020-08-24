@@ -9,8 +9,9 @@
 
 Run composer update first
 
-Create file `generate/backend/config/params-local.php`
+Create file `generate/backend/config/params-local.php`, then add this
 ```php
+<?php
 return [
     'database' => [
         'user' => 'this-is-username-of-your-database',
@@ -19,9 +20,10 @@ return [
 ];
 ```
 
-Then locate `template/engine/common/config/bootstrap.php` and change the root URL config
-
-Create folder `template/assets`
-Create folder `template/admin/assets`
+Create file `template/engine/common/config/bootstrap-local.php`, and add this
+```php
+<?php
+Yii::setAlias('@rootUrl', '/this-is-your-root-url/restotech-standard-version/app/<generatedId>');
+```
 
 Connect to address `http://your-site/generate/backend/web` for generating new restaurant`

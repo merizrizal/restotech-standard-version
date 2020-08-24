@@ -104,6 +104,10 @@ class SiteController extends Controller
         try {
 
             $srcDir = dirname(Yii::getAlias('@root')) . '/template';
+            
+            mkdir($srcDir . '/assets');
+            mkdir($srcDir . '/admin/assets');
+                        
             $destDir = dirname(Yii::getAlias('@root')) . '/app/' . $post['restaurant_id'];
 
             FileHelper::copyDirectory($srcDir, $destDir, [
@@ -116,12 +120,12 @@ class SiteController extends Controller
                 }
             ]);
 
-            $file = file_get_contents($destDir . '/engine/common/config/bootstrap.php');
+            $file = file_get_contents($destDir . '/engine/common/config/bootstrap-local.php');
 
             if ($file !== FALSE) {
 
                 $file = str_replace('<generatedId>', $post['restaurant_id'], $file);
-                file_put_contents($destDir . '/engine/common/config/bootstrap.php', $file);
+                file_put_contents($destDir . '/engine/common/config/bootstrap-local.php', $file);
             }
 
             $file = file_get_contents($destDir . '/engine/common/config/main-local.php');
