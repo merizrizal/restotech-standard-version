@@ -1,9 +1,9 @@
 <img src="restotech-logo.png">
 
-<b><h3>Software sistem manajemen restoran dan POS<h3></b>
+<p><b><h1>Software sistem manajemen restoran dan POS<h1></b></p>
 
-Created using Yii2 Framework
-Using MariaDB as Database
+<p>Created using <a href="https://www.yiiframework.com/">Yii2 Framework</a></p>
+<p>Using <a href="https://mariadb.org/">MariaDB as Database</a></p>
 
 --------------------------------------------------------
 
