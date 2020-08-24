@@ -129,6 +129,8 @@ class SiteController extends Controller
             if ($file !== FALSE) {
 
                 $file = str_replace('<generatedId>', $post['restaurant_id'], $file);
+                $file = str_replace('<generatedDbUsername>', Yii::$app->params['database']['user'], $file);
+                $file = str_replace('<generatedDbPassword>', Yii::$app->params['database']['password'], $file);
                 file_put_contents($destDir . '/engine/common/config/main-local.php', $file);
             }
 
@@ -140,8 +142,8 @@ class SiteController extends Controller
         try {
             $db = new \yii\db\Connection([
                 'dsn' => 'mysql:host=localhost',
-                'username' => 'meriz',
-                'password' => 'meriz123456',
+                'username' => Yii::$app->params['database']['user'],
+                'password' => Yii::$app->params['database']['password'],
                 'charset' => 'utf8',
             ]);
 
@@ -153,8 +155,8 @@ class SiteController extends Controller
         try {
             $db = new \yii\db\Connection([
                 'dsn' => 'mysql:host=localhost;dbname=' . $post['restaurant_id'],
-                'username' => 'meriz',
-                'password' => 'meriz123456',
+                'username' => Yii::$app->params['database']['user'],
+                'password' => Yii::$app->params['database']['password'],
                 'charset' => 'utf8',
             ]);
 
