@@ -27,3 +27,6 @@ Yii::setAlias('@rootUrl', '/this-is-your-root-url/restotech-standard-version/app
 ```
 
 Connect to address `http://your-site/generate/backend/web` for generating new restaurant`
+
+username: T001
+password: 123456
