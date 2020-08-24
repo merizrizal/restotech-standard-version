@@ -19,10 +19,10 @@ return [
 ];
 ```
 
-Then locate ['template/engine/common/config/bootstrap.php'] and change the root URL config
+Then locate [`template/engine/common/config/bootstrap.php`] and change the root URL config
 
-Create folder ['template/assets']
+Create folder [`template/assets`]
 
-Create folder ['template/admin/assets']
+Create folder [`template/admin/assets`]
 
-Connect to address ['http://your-site/generate/backend/web for generating new restaurant']
+Connect to address [`http://your-site/generate/backend/web for generating new restaurant`]
