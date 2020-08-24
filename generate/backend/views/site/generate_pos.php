@@ -6,7 +6,7 @@
 
 use yii\helpers\Html;
 
-$this->title = 'Generate POS';
+$this->title = 'Generate Restaurant';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-login">
