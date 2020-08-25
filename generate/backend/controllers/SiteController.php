@@ -105,8 +105,8 @@ class SiteController extends Controller
 
             $srcDir = dirname(Yii::getAlias('@root')) . '/template';
             
-            mkdir($srcDir . '/assets');
-            mkdir($srcDir . '/admin/assets');
+            if (!file_exists($srcDir . '/assets')) mkdir($srcDir . '/assets');
+            if (!file_exists($srcDir . '/admin/assets')) mkdir($srcDir . '/admin/assets');
                         
             $destDir = dirname(Yii::getAlias('@root')) . '/app/' . $post['restaurant_id'];
 
