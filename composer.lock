@@ -11,7 +11,7 @@
             "version": "v3.4.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:twbs/bootstrap.git",
+                "url": "https://github.com/twbs/bootstrap.git",
                 "reference": "68b0d231a13201eb14acd3dc84e51543d16e5f7e"
             },
             "dist": {
@@ -53,7 +53,7 @@
             "version": "3.5.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "4c0e4becb8263bb5b3e6dadc448d8e7305ef8215"
             },
             "dist": {
@@ -1013,12 +1013,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-fileinput.git",
-                "reference": "1530e293315bfb09661a50ed34bf1e8b57f92f69"
+                "reference": "9ab1fa367c03046a7e064b0f2b39895a5c834722"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/1530e293315bfb09661a50ed34bf1e8b57f92f69",
-                "reference": "1530e293315bfb09661a50ed34bf1e8b57f92f69",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/9ab1fa367c03046a7e064b0f2b39895a5c834722",
+                "reference": "9ab1fa367c03046a7e064b0f2b39895a5c834722",
                 "shasum": ""
             },
             "require": {
@@ -1066,7 +1066,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2020-06-02T17:24:23+00:00"
+            "time": "2020-09-07T07:49:19+00:00"
         },
         {
             "name": "kartik-v/yii2-widget-select2",
@@ -1074,12 +1074,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-select2.git",
-                "reference": "78efbcd1ae87b87803f9beb5e692acf790106cfb"
+                "reference": "1f095abdc7e319792871eec24c11e9d6eba097c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/78efbcd1ae87b87803f9beb5e692acf790106cfb",
-                "reference": "78efbcd1ae87b87803f9beb5e692acf790106cfb",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/1f095abdc7e319792871eec24c11e9d6eba097c3",
+                "reference": "1f095abdc7e319792871eec24c11e9d6eba097c3",
                 "shasum": ""
             },
             "require": {
@@ -1126,7 +1126,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2020-07-22T10:40:59+00:00"
+            "time": "2020-09-07T08:03:37+00:00"
         },
         {
             "name": "kartik-v/yii2-widget-timepicker",
@@ -2091,16 +2091,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.37",
+            "version": "2.0.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "e8094d1aa9e807fbea970bc1360ab836ffb1b738"
+                "reference": "fd01e747cc66a049ec105048f0ab8dfbdf60bf4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/e8094d1aa9e807fbea970bc1360ab836ffb1b738",
-                "reference": "e8094d1aa9e807fbea970bc1360ab836ffb1b738",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/fd01e747cc66a049ec105048f0ab8dfbdf60bf4b",
+                "reference": "fd01e747cc66a049ec105048f0ab8dfbdf60bf4b",
                 "shasum": ""
             },
             "require": {
@@ -2201,7 +2201,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-07T20:11:56+00:00"
+            "time": "2020-09-14T21:52:10+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
