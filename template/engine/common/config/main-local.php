@@ -3,7 +3,7 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=<generatedId>',
+            'dsn' => 'mysql:host=restotech_mariadb_server;dbname=<generatedId>',
             'username' => '<generatedDbUsername>',
             'password' => '<generatedDbPassword>',
             'charset' => 'utf8',

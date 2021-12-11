@@ -145,7 +145,7 @@ class SiteController extends Controller
 
         try {
             $db = new \yii\db\Connection([
-                'dsn' => 'mysql:host=localhost',
+                'dsn' => 'mysql:host=restotech_mariadb_server',
                 'username' => Yii::$app->params['database']['user'],
                 'password' => Yii::$app->params['database']['password'],
                 'charset' => 'utf8',
@@ -158,7 +158,7 @@ class SiteController extends Controller
 
         try {
             $db = new \yii\db\Connection([
-                'dsn' => 'mysql:host=localhost;dbname=' . $post['restaurant_id'],
+                'dsn' => 'mysql:host=restotech_mariadb_server;dbname=' . $post['restaurant_id'],
                 'username' => Yii::$app->params['database']['user'],
                 'password' => Yii::$app->params['database']['password'],
                 'charset' => 'utf8',
