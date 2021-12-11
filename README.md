@@ -11,14 +11,10 @@ You can run this using Docker compose.
 It can be found on <a href="https://github.com/merizrizal/docker-restotech-standard">docker-restotech-standard</a>
 </p>
 
-<p>
-Connect to address `http://localhost:8180/generate/backend/web/` for generating new restaurant`
-</p>
+Connect to address `http://localhost:8180/generate/backend/web/` for generating new restaurant
 
-<p>
 username: T001
 password: 123456
-</p>
 
 ## Contact
 Any question/support please contact me meriz.rizal@gmail.com
