@@ -6,30 +6,19 @@
 <p>Using <a href="https://mariadb.org/">MariaDB as Database</a></p>
 
 --------------------------------------------------------
+<p>
+You can run this using Docker compose.
+It can be found on <a href="https://github.com/merizrizal/docker-restotech-standard">docker-restotech-standard</a>
+</p>
 
-Run composer update first
+<p>
+Connect to address `http://localhost:8180/generate/backend/web/` for generating new restaurant`
+</p>
 
-Create file `generate/backend/config/params-local.php`, then add this
-```php
-<?php
-return [
-    'database' => [
-        'user' => 'this-is-username-of-your-database',
-        'password' => 'this-is-password-of-your-database'
-    ]
-];
-```
-
-Create file `template/engine/common/config/bootstrap-local.php`, and add this
-```php
-<?php
-Yii::setAlias('@rootUrl', '/this-is-your-root-url/restotech-standard-version/app/<generatedId>');
-```
-
-Connect to address `http://your-site/generate/backend/web` for generating new restaurant`
-
+<p>
 username: T001
 password: 123456
+</p>
 
 ## Contact
 Any question/support please contact me meriz.rizal@gmail.com
