@@ -13,6 +13,8 @@ It can be found on <a href="https://github.com/merizrizal/docker-restotech-stand
 
 Connect to address `http://localhost:8180/generate/backend/web/` for generating new restaurant
 
+Or access the online demo on `https://restotech.merizrizal.com/`
+
 username: T001
 password: 123456
 
