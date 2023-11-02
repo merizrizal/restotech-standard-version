@@ -1,4 +1,5 @@
 <?php
+
 namespace backend\controllers;
 
 use Yii;
@@ -7,6 +8,7 @@ use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\helpers\FileHelper;
 use common\models\LoginForm;
+use DirectoryIterator;
 
 /**
  * Site controller
@@ -59,9 +61,24 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionIndex()
+    public function actionIndex($generate = 0)
     {
-        return $this->render('index');
+        $path = dirname(Yii::getAlias('@root')) . '/app';
+        $directoryIterator = new DirectoryIterator($path);
+        $directories = [];
+        foreach ($directoryIterator as $fileinfo) {
+            if ($fileinfo->isDir() && !$fileinfo->isDot()) {
+                $directories[] = $fileinfo->getFilename();
+            }
+        }
+
+        if (count($directories) > 0 && !$generate) {
+            return $this->render('index', [
+                'directories' => $directories,
+            ]);
+        } else {
+            return $this->render('generate');
+        }
     }
 
     /**
@@ -97,22 +114,23 @@ class SiteController extends Controller
         return $this->goHome();
     }
 
-    public function actionGeneratePos() {
+    public function actionGeneratePos()
+    {
 
         $post = Yii::$app->request->post();
 
         try {
 
             $srcDir = dirname(Yii::getAlias('@root')) . '/template';
-            
+
             if (!file_exists($srcDir . '/assets')) mkdir($srcDir . '/assets');
             if (!file_exists($srcDir . '/admin/assets')) mkdir($srcDir . '/admin/assets');
-                        
+
             $destDir = dirname(Yii::getAlias('@root')) . '/app/' . $post['restaurant_id'];
 
             FileHelper::copyDirectory($srcDir, $destDir, [
 
-                'afterCopy' => function($from, $to) {
+                'afterCopy' => function ($from, $to) {
 
                     //echo "Copy success from " . $from . ' to ' . $to . "\n";
 
@@ -137,7 +155,6 @@ class SiteController extends Controller
                 $file = str_replace('<generatedDbPassword>', Yii::$app->params['database']['password'], $file);
                 file_put_contents($destDir . '/engine/common/config/main-local.php', $file);
             }
-
         } catch (\yii\base\InvalidParamException $e) {
 
             echo $e->getTraceAsString();
