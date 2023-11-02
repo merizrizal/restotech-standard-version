@@ -1,1 +1,4 @@
 IndexIgnore */*
+
+RewriteEngine on
+RewriteRule ^(.*)$ ./generate/backend/web/index.php
