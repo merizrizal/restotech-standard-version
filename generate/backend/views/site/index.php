@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="form-group">
                 <?php
                 foreach ($directories as $directory) {
-                    echo Html::a("<h3>$directory</h3>", "app/$directory", ['class' => 'control-label']); 
+                    echo Html::a("<h3>$directory</h3>", "/app/$directory", ['class' => 'control-label']); 
                 } ?>
             </div>
         </div>
