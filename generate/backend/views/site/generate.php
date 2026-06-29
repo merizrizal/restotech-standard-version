@@ -23,22 +23,27 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?= Html::label('Restaurant ID', null, ['class' => 'control-label']) ?>
                     <?= Html::textInput('restaurant_id', null, ['class' => 'form-control']) ?>
                 </div>
-            
+
                 <div class="form-group">
                     <?= Html::label('Nama Restaurant', null, ['class' => 'control-label']) ?>
                     <?= Html::textInput('restaurant_name', null, ['class' => 'form-control']) ?>
                 </div>
-            
+
                 <div class="form-group">
                     <?= Html::label('Alamat', null, ['class' => 'control-label']) ?>
                     <?= Html::textInput('alamat', null, ['class' => 'form-control']) ?>
                 </div>
-            
+
                 <div class="form-group">
                     <?= Html::label('Telepon', null, ['class' => 'control-label']) ?>
                     <?= Html::textInput('phone', null, ['class' => 'form-control']) ?>
                 </div>
-            
+
+                <div class="form-group">
+                    <?= Html::label('Generate Seed Data', null, ['class' => 'control-label']) ?>
+                    <?= Html::checkbox('seed_data', null, ['class' => 'form-control']) ?>
+                </div>
+
                 <div class="form-group">
                     <?= Html::submitButton('Generate', ['class' => 'btn btn-primary', 'name' => 'generate-button']) ?>
                 </div>

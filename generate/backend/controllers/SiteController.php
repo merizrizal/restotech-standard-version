@@ -198,6 +198,16 @@ class SiteController extends Controller
 
                 $db->createCommand($file)->execute();
             }
+
+            if ($post['seed_data']) {
+
+                $file = file_get_contents(dirname(Yii::getAlias('@root')) . '/dbtemplate/restotech_operational_seed.sql');
+
+                if ($file !== FALSE) {
+
+                    $db->createCommand($file)->execute();
+                }
+            }
         } catch (\Exception $e) {
             echo $e->getMessage();
         }

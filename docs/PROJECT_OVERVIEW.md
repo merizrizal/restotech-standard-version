@@ -28,7 +28,7 @@ The generated restaurant instance contains:
   - Source scaffold copied into each generated restaurant folder.
   - Includes `engine/{common,frontend,backend,api,console}` configs/tests.
 - `dbtemplate/`
-  - SQL templates applied to newly created DB.
+  - SQL templates applied to newly created DB, including the optional operational seed set.
 - `app/`
   - Output folder for generated restaurant instances.
 - `environments/`, `init`
@@ -61,5 +61,7 @@ These files load module configs from `vendor/synctech/restotech-standard/*/confi
 ## 6. Current state notes
 
 - `app/` currently only has `.gitignore` in this snapshot (no generated restaurants committed).
+- `dbtemplate/restotech_operational_seed.sql` is present and can be loaded from the generator UI when seed data is requested.
+- `generate/backend/views/site/generate.php` exposes the `Generate Seed Data` checkbox.
 - `vendor/` is gitignored and not present in repository snapshot by default.
 - Several local config files are intentionally not tracked and must be supplied per environment.

@@ -40,16 +40,19 @@ Therefore, `template/engine/common/config/bootstrap-local.php` must exist locall
 1. Open generator app URL:
 - `http://<host>/generate/backend/web/`
 
-2. Submit form fields:
+2. Optionally enable `Generate Seed Data` to load the operational seed rows.
+
+3. Submit form fields:
 - Restaurant ID
 - Restaurant name
 - Address
 - Phone
 
-3. System performs:
+4. System performs:
 - Copy scaffold directory
 - Config token replacement
-- Database create + SQL import
+- Database create + base SQL import
+- Optional operational seed import from `dbtemplate/restotech_operational_seed.sql`
 - Returns generated restaurant URL
 
 ## 4. Environment and infra hints in repo

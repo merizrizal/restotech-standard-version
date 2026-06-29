@@ -25,7 +25,7 @@ Key actions:
   - Otherwise renders generation form.
 
 - `actionGeneratePos()`
-  - Reads POST fields: `restaurant_id`, `restaurant_name`, `alamat`, `phone`.
+  - Reads POST fields: `restaurant_id`, `restaurant_name`, `alamat`, `phone`, plus the optional `seed_data` checkbox.
   - Copies `template/` to `app/<restaurant_id>`.
   - Replaces tokens in generated config:
     - `<generatedId>`
@@ -35,6 +35,7 @@ Key actions:
   - Executes:
     - `dbtemplate/restotech_template.sql`
     - `dbtemplate/company_template.sql` (with name/address/phone placeholders replaced)
+    - `dbtemplate/restotech_operational_seed.sql` when `seed_data` is checked.
   - Returns generated URL page.
 
 ## 3. Config composition model

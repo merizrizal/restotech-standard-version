@@ -21,5 +21,5 @@ This documentation is a comprehensive study of the active project at:
 - This repository is a Yii2-based **restaurant POS generator**.
 - The active app is `generate/backend`.
 - It creates tenant-like restaurant instances under `app/<restaurant_id>` by copying `template/`.
-- It provisions a new MariaDB database from SQL templates in `dbtemplate/`.
+- It provisions a new MariaDB database from SQL templates in `dbtemplate/`, with optional operational seed data when enabled.
 - Core business modules are loaded from external Composer package `synctech/restotech-standard`.
