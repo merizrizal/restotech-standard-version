@@ -1,7 +1,12 @@
 {
     "name": "yiisoft/yii2-app-advanced",
     "description": "Yii 2 Advanced Project Template",
-    "keywords": ["yii2", "framework", "advanced", "project template"],
+    "keywords": [
+        "yii2",
+        "framework",
+        "advanced",
+        "project template"
+    ],
     "homepage": "http://www.yiiframework.com/",
     "type": "project",
     "license": "BSD-3-Clause",
@@ -18,40 +23,51 @@
         "yiisoft/yii2": "~2.0.6",
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
-	"yiisoft/yii2-httpclient": "~2.0.0",
+        "yiisoft/yii2-httpclient": "~2.0.0",
         "yiisoft/yii2-imagine": "dev-master",
-
-	"synctech/yii2-synctbase": "dev-master",
-	"synctech/restotech-standard": "dev-master",
-	"kartik-v/yii2-grid": "@dev",
-	"kartik-v/yii2-widget-datepicker": "@dev",
+        "synctech/yii2-synctbase": "dev-master",
+        "synctech/restotech-standard": "dev-main",
+        "kartik-v/yii2-grid": "@dev",
+        "kartik-v/yii2-widget-datepicker": "@dev",
         "kartik-v/yii2-widget-fileinput": "@dev",
         "kartik-v/yii2-widget-select2": "@dev",
-	"kartik-v/yii2-widget-timepicker": "*",
-	"kartik-v/yii2-money": "dev-master",
-	"kartik-v/yii2-mpdf": "@dev",
+        "kartik-v/yii2-widget-timepicker": "*",
+        "kartik-v/yii2-money": "dev-master",
+        "kartik-v/yii2-mpdf": "@dev",
         "kartik-v/yii2-field-range": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
-        "yiisoft/yii2-gii": "~2.0.0",
+        "yiisoft/yii2-gii": "^2.2",
         "yiisoft/yii2-faker": "~2.0.0",
-        "codeception/base": "^2.2.3",
+        "codeception/codeception": "^5.0",
         "codeception/verify": "~0.3.1"
     },
     "config": {
-        "process-timeout": 3600
+        "process-timeout": 3600,
+        "policy": {
+            "advisories": {
+                "ignore-id": [
+                    "PKSA-mm6g-r738-y4dn",
+                    "PKSA-bbgw-mkqz-n76v",
+                    "PKSA-3jnd-ncvd-j4wd"
+                ]
+            }
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
     },
     "repositories": [
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
         },
-	{
+        {
             "type": "git",
             "url": "https://github.com/merizrizal/synctbase.git"
         },
-	{
+        {
             "type": "git",
             "url": "https://github.com/merizrizal/restotech-standard.git"
         }
