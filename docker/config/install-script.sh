@@ -1,3 +1,6 @@
+#!/bin/sh
+set -eu
+
 apt update
 apt upgrade -y
 apt install -y sudo

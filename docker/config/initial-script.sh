@@ -1,3 +1,6 @@
+#!/bin/sh
+set -eu
+
 composer update
 
 cp /root/initial-config/params-local.php /var/www/html/generate/backend/config/params-local.php
