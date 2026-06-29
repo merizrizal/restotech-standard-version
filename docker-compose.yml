@@ -1,0 +1,19 @@
+services:
+  server:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: restotech_standard_server
+    ports:
+      - 8181:80
+      - 41443:443
+    command: bash -c "service apache2 start && tail -f /var/log/apache2/access.log /var/log/apache2/error.log"
+    tty: true
+    depends_on:
+      - database
+
+  database:
+    image: mariadb:12.3.2
+    container_name: restotech_mariadb_server
+    environment:
+       MYSQL_ROOT_PASSWORD: Root123456Restotech
